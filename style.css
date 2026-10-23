@@ -1,0 +1,121 @@
+:root {
+  --bg: #242528;
+  --ink: #f2f0eb;
+  --sub: #9b9890;
+  --accent: #eab308;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: #ffffff; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px clamp(20px, 4vw, 64px);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(242, 240, 235, 0.08);
+}
+
+.logo-name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 23px;
+  letter-spacing: .01em;
+  color: var(--accent);
+}
+
+.logo-role {
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+  font-size: 23px;
+  letter-spacing: .01em;
+  color: var(--ink);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(16px, 3vw, 32px);
+}
+
+.navlink {
+  font-family: 'Courier Prime', monospace;
+  font-size: 12px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.navlink:hover { color: var(--accent); }
+
+.stage {
+  min-height: calc(100vh - 73px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 64px);
+  background: #000;
+}
+
+.carousel-figure {
+  margin: 0;
+  width: 100%;
+  max-width: 1180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.carousel-frame {
+  width: 100%;
+  background: #000;
+}
+
+.carousel-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 1px;
+  animation: fadeToBlack 7s linear infinite;
+}
+
+.carousel-caption {
+  font-family: 'Courier Prime', monospace;
+  font-size: 13px;
+  letter-spacing: .01em;
+  text-align: center;
+  color: var(--sub);
+  max-width: 640px;
+  margin: 0;
+  animation: fadeToBlack 7s linear infinite;
+}
+
+@keyframes fadeToBlack {
+  0%, 71.43% { opacity: 1; }
+  85.71% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  .carousel-frame img { max-height: 60vh; }
+}
