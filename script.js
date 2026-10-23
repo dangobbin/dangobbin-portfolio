@@ -6,6 +6,7 @@
 (async function () {
   const img = document.getElementById('carousel-img');
   const caption = document.getElementById('carousel-caption');
+  if (!img || !caption) return; // carousel markup not on this page (e.g. "coming soon")
 
   const res = await fetch('photos/manifest.json');
   const slides = await res.json();

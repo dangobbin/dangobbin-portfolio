@@ -65,6 +65,26 @@ a:hover { color: #ffffff; }
 
 .navlink:hover { color: var(--accent); }
 
+.coming-soon {
+  text-align: center;
+}
+
+.coming-soon-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: clamp(32px, 6vw, 56px);
+  letter-spacing: .02em;
+  color: var(--accent);
+}
+
+.coming-soon-sub {
+  margin-top: 14px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: var(--sub);
+}
+
 .stage {
   min-height: calc(100vh - 73px);
   display: flex;
