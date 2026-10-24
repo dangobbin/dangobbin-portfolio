@@ -213,6 +213,11 @@ a:hover { color: #ffffff; }
   transition: opacity 1s linear;
 }
 
+.intro .logo-name,
+.intro .logo-role {
+  font-size: 34.5px; /* +50% over the header's 23px */
+}
+
 .carousel-caption-row {
   position: relative;
   width: 100%;
