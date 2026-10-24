@@ -114,11 +114,37 @@ a:hover { color: #ffffff; }
   width: 100%;
 }
 
-.carousel-serial {
+.carousel-controls {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 8px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--sub);
+  cursor: pointer;
+}
+
+.carousel-btn:hover,
+.carousel-btn:focus-visible { color: var(--accent); }
+
+.carousel-btn:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.carousel-serial {
   font-family: 'Courier Prime', monospace;
   font-size: 9px;
   letter-spacing: .04em;

@@ -5,13 +5,14 @@
 //
 // Everything is driven from one JS timer chain (no CSS "animation: infinite"
 // running on its own clock) so the fade and the content swap can never drift
-// apart — a drift is what caused the old photo to flash back briefly before
-// the swap.
+// apart. The pause/next controls hook into that same chain.
 
 (async function () {
   const img = document.getElementById('carousel-img');
   const caption = document.getElementById('carousel-caption');
   const serial = document.getElementById('carousel-serial');
+  const toggleBtn = document.getElementById('carousel-toggle');
+  const nextBtn = document.getElementById('carousel-next');
   if (!img || !caption) return; // carousel markup not on this page (e.g. "coming soon")
 
   const fadeEls = [img, caption, serial].filter(Boolean);
@@ -21,6 +22,8 @@
   if (!slides.length) return;
 
   let current = Math.floor(Math.random() * slides.length);
+  let paused = false;
+  let timer = null;
 
   function show(index) {
     const slide = slides[index];
@@ -43,18 +46,53 @@
     return next;
   }
 
-  function cycle() {
-    setOpacity(0); // 1s fade to black
-    setTimeout(function () {
-      current = pickNext(current);
-      show(current); // swap while fully invisible
-      void img.offsetWidth; // force a reflow so opacity:0 is committed before fading back up
-      setOpacity(1); // 1s fade back up
-      setTimeout(cycle, 7000); // 1s to finish fading up + 6s stable, then do it again
-    }, 1000);
+  // fades the current photo out, swaps it, fades the new one in; resolves
+  // once the fade-in has finished.
+  function transitionToNext() {
+    return new Promise(function (resolve) {
+      setOpacity(0);
+      setTimeout(function () {
+        current = pickNext(current);
+        show(current);
+        void img.offsetWidth; // force a reflow so opacity:0 is committed before fading back up
+        setOpacity(1);
+        setTimeout(resolve, 1000);
+      }, 1000);
+    });
+  }
+
+  function scheduleAuto() {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      transitionToNext().then(function () {
+        if (!paused) scheduleAuto();
+      });
+    }, 6000);
+  }
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      paused = !paused;
+      toggleBtn.textContent = paused ? '▶' : '⏸';
+      toggleBtn.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
+      if (paused) {
+        clearTimeout(timer);
+      } else {
+        scheduleAuto();
+      }
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', function () {
+      clearTimeout(timer);
+      transitionToNext().then(function () {
+        if (!paused) scheduleAuto();
+      });
+    });
   }
 
   show(current);
   setOpacity(1);
-  setTimeout(cycle, 6000); // first stable viewing period
+  scheduleAuto();
 })();
