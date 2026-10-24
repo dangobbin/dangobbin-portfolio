@@ -190,7 +190,7 @@ a:hover { color: #ffffff; }
   height: auto;
   object-fit: contain;
   border-radius: 1px;
-  transition: opacity 1s linear;
+  transition: opacity 1s linear, transform 1s cubic-bezier(.22, .9, .36, 1);
 }
 
 .carousel-caption {

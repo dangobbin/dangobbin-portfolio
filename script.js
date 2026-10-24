@@ -66,19 +66,30 @@
     });
   }
 
-  // preloads targetIndex, fades the current photo out, swaps it in, fades it
-  // back up; resolves once the fade-in has finished. No-ops (resolves
+  // preloads targetIndex, fades the current photo to black, then swaps it in
+  // and slides it in from the left (the exit is a fade, the entrance is a
+  // slide); resolves once the entrance has finished. No-ops (resolves
   // immediately) if a transition is already running.
   function transitionTo(targetIndex) {
     if (transitioning) return Promise.resolve();
     transitioning = true;
     return preload(slides[targetIndex].src).then(function () {
       return new Promise(function (resolve) {
-        setOpacity(0);
+        setOpacity(0); // exit: fade everything to black
         setTimeout(function () {
           current = targetIndex;
           show(current); // already preloaded -> paints immediately, no gap
-          setOpacity(1);
+
+          // stage the incoming photo off-screen to the left, still invisible,
+          // without animating that jump
+          img.style.transition = 'none';
+          img.style.transform = 'translateX(-60px)';
+          void img.offsetWidth; // commit that position before re-enabling the transition
+          img.style.transition = '';
+
+          setOpacity(1); // caption/serial/photo fade back in...
+          img.style.transform = 'translateX(0)'; // ...while the photo also slides in from the left
+
           setTimeout(function () {
             transitioning = false;
             resolve();
