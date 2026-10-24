@@ -215,7 +215,7 @@ a:hover { color: #ffffff; }
 
 .intro .logo-name,
 .intro .logo-role {
-  font-size: 34.5px; /* +50% over the header's 23px */
+  font-size: clamp(34.5px, 7vw, 56px);
 }
 
 .carousel-caption-row {
