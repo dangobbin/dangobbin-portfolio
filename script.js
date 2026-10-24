@@ -1,7 +1,8 @@
 // Home carousel: picks a photo at random from photos/manifest.json, holds it
-// for 6s, then fades to black over 1s, swaps while invisible, and fades back
-// up over 1s (8s per cycle). Never repeats the photo just shown. Add more
-// photos by appending entries to manifest.json — no code changes needed.
+// for 6s, then fades to black over .6s, swaps while invisible, and fades
+// back up over .6s (7.2s per cycle). Never repeats the photo just shown.
+// Add more photos by appending entries to manifest.json — no code changes
+// needed.
 //
 // Everything is driven from one JS timer chain (no CSS "animation: infinite"
 // running on its own clock) so the fade and the content swap can never drift
@@ -129,8 +130,8 @@
           setTimeout(function () {
             transitioning = false;
             resolve();
-          }, 1000);
-        }, 1000);
+          }, 600);
+        }, 600);
       });
     });
   }

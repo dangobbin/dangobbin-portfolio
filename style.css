@@ -273,7 +273,7 @@ a:hover { color: #ffffff; }
   font-size: 9px;
   letter-spacing: .04em;
   color: #706d66;
-  transition: opacity 1s linear;
+  transition: opacity .6s linear;
 }
 
 .carousel-frame img {
@@ -284,7 +284,7 @@ a:hover { color: #ffffff; }
   height: auto;
   object-fit: contain;
   border-radius: 1px;
-  transition: opacity 1s linear, transform 1s cubic-bezier(.22, .9, .36, 1);
+  transition: opacity .6s linear, transform .6s cubic-bezier(.22, .9, .36, 1);
 }
 
 .carousel-caption {
@@ -296,7 +296,7 @@ a:hover { color: #ffffff; }
   max-width: 640px;
   margin: 0 auto;
   padding-right: 56px; /* keeps centered text clear of the serial on narrow (portrait) photos */
-  transition: opacity 1s linear;
+  transition: opacity .6s linear;
 }
 
 .navlink.is-active { color: var(--accent); }
