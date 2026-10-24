@@ -155,6 +155,21 @@ a:hover { color: #ffffff; }
   outline-offset: 1px;
 }
 
+.carousel-btn-arrow {
+  font-size: 11px;
+}
+
+.carousel-btn-text {
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.carousel-btn-text.is-on { color: var(--accent); }
+
+.carousel-btn-text.is-on:hover,
+.carousel-btn-text.is-on:focus-visible { color: var(--ink); }
+
 .carousel-serial {
   position: absolute;
   right: 0;

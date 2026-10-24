@@ -5,13 +5,20 @@
 //
 // Everything is driven from one JS timer chain (no CSS "animation: infinite"
 // running on its own clock) so the fade and the content swap can never drift
-// apart. The pause/next controls hook into that same chain.
+// apart. A "transitioning" guard also makes sure the auto-advance and the
+// prev/next buttons can never run two transitions at once — if the auto
+// timer had already fired (its callback started) right as a button was
+// clicked, both would show()/setOpacity() independently and the old photo
+// could flash back mid-fade. "Previous" walks back through a history of
+// what was actually shown (the order is random, so there's no fixed
+// sequence to step back through otherwise).
 
 (async function () {
   const img = document.getElementById('carousel-img');
   const caption = document.getElementById('carousel-caption');
   const serial = document.getElementById('carousel-serial');
   const toggleBtn = document.getElementById('carousel-toggle');
+  const prevBtn = document.getElementById('carousel-prev');
   const nextBtn = document.getElementById('carousel-next');
   if (!img || !caption) return; // carousel markup not on this page (e.g. "coming soon")
 
@@ -22,8 +29,10 @@
   if (!slides.length) return;
 
   let current = Math.floor(Math.random() * slides.length);
+  const history = []; // indices shown before the current one, oldest first
   let paused = false;
   let timer = null;
+  let transitioning = false;
 
   function show(index) {
     const slide = slides[index];
@@ -37,7 +46,7 @@
     fadeEls.forEach(function (el) { el.style.opacity = v; });
   }
 
-  function pickNext(prevIndex) {
+  function pickRandom(prevIndex) {
     if (slides.length <= 1) return 0;
     let next;
     do {
@@ -57,28 +66,37 @@
     });
   }
 
-  // preloads the next photo, fades the current one out, swaps it, fades the
-  // new one in; resolves once the fade-in has finished.
-  function transitionToNext() {
-    const nextIndex = pickNext(current);
-    return preload(slides[nextIndex].src).then(function () {
+  // preloads targetIndex, fades the current photo out, swaps it in, fades it
+  // back up; resolves once the fade-in has finished. No-ops (resolves
+  // immediately) if a transition is already running.
+  function transitionTo(targetIndex) {
+    if (transitioning) return Promise.resolve();
+    transitioning = true;
+    return preload(slides[targetIndex].src).then(function () {
       return new Promise(function (resolve) {
         setOpacity(0);
         setTimeout(function () {
-          current = nextIndex;
+          current = targetIndex;
           show(current); // already preloaded -> paints immediately, no gap
           setOpacity(1);
-          setTimeout(resolve, 1000);
+          setTimeout(function () {
+            transitioning = false;
+            resolve();
+          }, 1000);
         }, 1000);
       });
     });
   }
 
-  function scheduleAuto() {
+  function runAuto() {
     clearTimeout(timer);
     timer = setTimeout(function () {
-      transitionToNext().then(function () {
-        if (!paused) scheduleAuto();
+      if (transitioning) { runAuto(); return; } // something else is mid-transition, try again later
+      const prior = current;
+      const target = pickRandom(current);
+      transitionTo(target).then(function () {
+        history.push(prior);
+        if (!paused) runAuto();
       });
     }, 6000);
   }
@@ -86,26 +104,43 @@
   if (toggleBtn) {
     toggleBtn.addEventListener('click', function () {
       paused = !paused;
-      toggleBtn.textContent = paused ? '▶' : '⏸';
+      toggleBtn.textContent = paused ? 'Slideshow off' : 'Slideshow on';
+      toggleBtn.classList.toggle('is-on', !paused);
       toggleBtn.setAttribute('aria-label', paused ? 'Play slideshow' : 'Pause slideshow');
       if (paused) {
         clearTimeout(timer);
       } else {
-        scheduleAuto();
+        runAuto();
       }
     });
   }
 
   if (nextBtn) {
     nextBtn.addEventListener('click', function () {
+      if (transitioning) return;
       clearTimeout(timer);
-      transitionToNext().then(function () {
-        if (!paused) scheduleAuto();
+      const prior = current;
+      const target = pickRandom(current);
+      transitionTo(target).then(function () {
+        history.push(prior);
+        if (!paused) runAuto();
+      });
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', function () {
+      if (transitioning || !history.length) return;
+      clearTimeout(timer);
+      const target = history.pop();
+      transitionTo(target).then(function () {
+        if (!paused) runAuto();
       });
     });
   }
 
   show(current);
   setOpacity(1);
-  scheduleAuto();
+  toggleBtn && toggleBtn.classList.add('is-on');
+  runAuto();
 })();
