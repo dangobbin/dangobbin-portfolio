@@ -120,7 +120,7 @@ a:hover { color: #ffffff; }
   top: 50%;
   transform: translateY(-50%);
   font-family: 'Courier Prime', monospace;
-  font-size: 11px;
+  font-size: 9px;
   letter-spacing: .04em;
   color: var(--sub);
   animation: fadeToBlack 8s linear infinite;
@@ -238,6 +238,7 @@ a:hover { color: #ffffff; }
 
 .decade-tile-serial {
   flex: none;
+  font-size: 9px;
   color: var(--sub);
 }
 
