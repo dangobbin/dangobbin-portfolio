@@ -1,5 +1,6 @@
 :root {
   --bg: #242528;
+  --header-bg: #1a1b1d;
   --ink: #f2f0eb;
   --sub: #9b9890;
   --accent: #eab308;
@@ -35,7 +36,7 @@ a:hover { color: #ffffff; }
   justify-content: space-between;
   gap: 16px;
   padding: 20px clamp(20px, 4vw, 64px);
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  background: color-mix(in srgb, var(--header-bg) 88%, transparent);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid rgba(242, 240, 235, 0.08);
 }
@@ -127,6 +128,11 @@ a:hover { color: #ffffff; }
   gap: 8px;
 }
 
+.carousel-caption-row {
+  position: relative;
+  width: 100%;
+}
+
 .carousel-controls {
   display: flex;
   align-items: center;
@@ -154,6 +160,10 @@ a:hover { color: #ffffff; }
 }
 
 .carousel-serial {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: 'Courier Prime', monospace;
   font-size: 9px;
   letter-spacing: .04em;
