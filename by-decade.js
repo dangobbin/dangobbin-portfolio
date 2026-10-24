@@ -1,10 +1,51 @@
 // Groups photos/manifest.json by decade and renders one grid section per
 // decade, newest first. Add more photos by appending to manifest.json
 // (each entry needs a "year") — this page updates on its own.
+//
+// Clicking a tile opens an in-page lightbox (not the raw image file) so
+// there's always an obvious way back to the grid, and dragging/right-click
+// saving is disabled on the enlarged image.
 
 (async function () {
   const main = document.getElementById('decades');
   if (!main) return;
+
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaptionText = document.getElementById('lightbox-caption-text');
+  const lightboxSerial = document.getElementById('lightbox-serial');
+  const lightboxClose = document.getElementById('lightbox-close');
+
+  function preventDrag(img) {
+    img.draggable = false;
+    img.addEventListener('contextmenu', function (e) { e.preventDefault(); });
+    img.addEventListener('dragstart', function (e) { e.preventDefault(); });
+  }
+
+  function openLightbox(photo) {
+    lightboxImg.src = photo.src;
+    lightboxImg.alt = photo.alt || '';
+    lightboxCaptionText.textContent = photo.caption || '';
+    lightboxSerial.textContent = photo.serial || '';
+    lightbox.hidden = false;
+    document.body.classList.add('lightbox-open');
+    lightboxClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.classList.remove('lightbox-open');
+    lightboxImg.src = '';
+  }
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) closeLightbox(); // click on the backdrop, not the photo
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !lightbox.hidden) closeLightbox();
+  });
+  preventDrag(lightboxImg);
 
   const res = await fetch('photos/manifest.json');
   const photos = await res.json();
@@ -34,17 +75,18 @@
     const grid = document.createElement('div');
     grid.className = 'decade-grid';
     for (const p of items) {
-      const a = document.createElement('a');
-      a.className = 'decade-tile';
-      a.href = p.src;
-      a.target = '_blank';
-      a.rel = 'noopener';
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'decade-tile';
+      btn.setAttribute('aria-label', 'Open: ' + (p.caption || p.alt || 'photo'));
+      btn.addEventListener('click', function () { openLightbox(p); });
 
       const img = document.createElement('img');
       img.src = p.src;
       img.alt = p.alt || '';
       img.loading = 'lazy';
-      a.appendChild(img);
+      preventDrag(img);
+      btn.appendChild(img);
 
       const cap = document.createElement('div');
       cap.className = 'decade-tile-caption';
@@ -60,9 +102,9 @@
         cap.appendChild(serial);
       }
 
-      a.appendChild(cap);
+      btn.appendChild(cap);
 
-      grid.appendChild(a);
+      grid.appendChild(btn);
     }
     section.appendChild(grid);
     main.appendChild(section);
