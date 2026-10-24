@@ -46,18 +46,31 @@
     return next;
   }
 
-  // fades the current photo out, swaps it, fades the new one in; resolves
-  // once the fade-in has finished.
-  function transitionToNext() {
+  // resolves once the browser has the image bytes decoded and cached, so
+  // swapping img.src later paints instantly instead of showing a gap.
+  function preload(src) {
     return new Promise(function (resolve) {
-      setOpacity(0);
-      setTimeout(function () {
-        current = pickNext(current);
-        show(current);
-        void img.offsetWidth; // force a reflow so opacity:0 is committed before fading back up
-        setOpacity(1);
-        setTimeout(resolve, 1000);
-      }, 1000);
+      const probe = new Image();
+      probe.onload = resolve;
+      probe.onerror = resolve; // don't hang forever on a broken file
+      probe.src = src;
+    });
+  }
+
+  // preloads the next photo, fades the current one out, swaps it, fades the
+  // new one in; resolves once the fade-in has finished.
+  function transitionToNext() {
+    const nextIndex = pickNext(current);
+    return preload(slides[nextIndex].src).then(function () {
+      return new Promise(function (resolve) {
+        setOpacity(0);
+        setTimeout(function () {
+          current = nextIndex;
+          show(current); // already preloaded -> paints immediately, no gap
+          setOpacity(1);
+          setTimeout(resolve, 1000);
+        }, 1000);
+      });
     });
   }
 
