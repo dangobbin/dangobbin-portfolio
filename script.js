@@ -48,11 +48,16 @@
   // etc.) kept being wrong in one direction or another.
   function updateImgMaxHeight() {
     if (!stage || !figure || !frame || !capRow || !controls || !header) return;
+    // on touch devices the header is fixed/out of flow (just a menu icon;
+    // see style.css) and .stage's own padding-top already clears it, so it
+    // doesn't also cost layout height the way it does on desktop
+    const headerPos = getComputedStyle(header).position;
+    const headerHeight = (headerPos === 'fixed' || headerPos === 'absolute') ? 0 : header.offsetHeight;
     const stageCs = getComputedStyle(stage);
     const stagePadding = parseFloat(stageCs.paddingTop) + parseFloat(stageCs.paddingBottom);
     const figureGap = parseFloat(getComputedStyle(figure).rowGap) || 0;
     const frameGap = parseFloat(getComputedStyle(frame).rowGap) || 0;
-    const chrome = header.offsetHeight + stagePadding + figureGap + frameGap +
+    const chrome = headerHeight + stagePadding + figureGap + frameGap +
       capRow.offsetHeight + controls.offsetHeight;
     const available = Math.max(window.innerHeight - chrome, 120);
     document.documentElement.style.setProperty('--img-max-height', available + 'px');

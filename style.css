@@ -63,6 +63,77 @@ a:hover { color: #ffffff; }
   gap: clamp(16px, 3vw, 32px);
 }
 
+.nav-toggle {
+  display: none;
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  margin-left: auto;
+  padding: 8px 10px;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.logo-mobile { display: none; }
+
+/* Touch devices (phones, tablets, in either orientation): the full header
+   bar costs too much fixed height, especially in landscape. Collapse it to
+   just a menu icon — tapping it opens the logo + links as a dropdown —
+   matching what Daniele asked for after seeing albertwatson.net's mobile
+   header. Keyed on touch capability (hover:none/pointer:coarse) rather than
+   a width breakpoint, since the problem showed up on an iPad in landscape,
+   not just on narrow phones. */
+@media (hover: none) and (pointer: coarse) {
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background: none;
+    backdrop-filter: none;
+    border-bottom: none;
+    padding: 8px clamp(16px, 4vw, 28px);
+  }
+
+  .site-header > .logo { display: none; }
+
+  .nav-toggle { display: block; }
+
+  .site-nav {
+    display: none;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0;
+    background: rgba(10, 10, 9, .97);
+    border-bottom: 1px solid rgba(242, 240, 235, 0.08);
+    padding-bottom: 8px;
+  }
+
+  .site-nav.is-open { display: flex; }
+
+  .logo-mobile {
+    display: block;
+    padding: 16px clamp(16px, 4vw, 28px) 12px;
+  }
+
+  .site-nav .navlink {
+    padding: 14px clamp(16px, 4vw, 28px);
+    border-top: 1px solid rgba(242, 240, 235, 0.06);
+  }
+
+  .stage,
+  .decades-main {
+    padding-top: clamp(52px, 12vw, 72px);
+  }
+}
+
 .navlink {
   font-family: 'Courier Prime', monospace;
   font-size: 12px;
