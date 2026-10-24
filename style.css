@@ -185,7 +185,7 @@ a:hover { color: #ffffff; }
 .carousel-frame img {
   display: block;
   max-width: 100%;
-  max-height: min(65vh, calc(100vh - 210px));
+  max-height: min(65vh, var(--img-max-height, 55vh));
   width: auto;
   height: auto;
   object-fit: contain;

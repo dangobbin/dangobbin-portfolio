@@ -34,12 +34,43 @@
   let timer = null;
   let transitioning = false;
 
+  const stage = document.querySelector('.stage');
+  const figure = document.querySelector('.carousel-figure');
+  const frame = document.querySelector('.carousel-frame');
+  const capRow = document.querySelector('.carousel-caption-row');
+  const controls = document.querySelector('.carousel-controls');
+  const header = document.querySelector('.site-header');
+
+  // Measures the real, rendered chrome (header + stage padding + gaps +
+  // caption/controls rows) and sets how much vertical room is actually left
+  // for the photo as a CSS variable — instead of guessing a fixed px budget,
+  // which on a real device (different font metrics, Safari's own chrome,
+  // etc.) kept being wrong in one direction or another.
+  function updateImgMaxHeight() {
+    if (!stage || !figure || !frame || !capRow || !controls || !header) return;
+    const stageCs = getComputedStyle(stage);
+    const stagePadding = parseFloat(stageCs.paddingTop) + parseFloat(stageCs.paddingBottom);
+    const figureGap = parseFloat(getComputedStyle(figure).rowGap) || 0;
+    const frameGap = parseFloat(getComputedStyle(frame).rowGap) || 0;
+    const chrome = header.offsetHeight + stagePadding + figureGap + frameGap +
+      capRow.offsetHeight + controls.offsetHeight;
+    const available = Math.max(window.innerHeight - chrome, 120);
+    document.documentElement.style.setProperty('--img-max-height', available + 'px');
+  }
+
+  let resizeTimer = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(updateImgMaxHeight, 100);
+  });
+
   function show(index) {
     const slide = slides[index];
     img.src = slide.src;
     img.alt = slide.alt;
     caption.textContent = slide.caption;
     if (serial) serial.textContent = slide.serial || '';
+    updateImgMaxHeight(); // caption length can change row height, so recheck each time
   }
 
   function setOpacity(v) {
