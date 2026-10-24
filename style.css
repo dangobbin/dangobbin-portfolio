@@ -1,6 +1,6 @@
 :root {
   --bg: #242528;
-  --header-bg: #1a1b1d;
+  --header-bg: #121314;
   --ink: #f2f0eb;
   --sub: #9b9890;
   --accent: #eab308;
@@ -163,7 +163,7 @@ a:hover { color: #ffffff; }
   font-family: 'Courier Prime', monospace;
   font-size: 9px;
   letter-spacing: .04em;
-  color: var(--sub);
+  color: #706d66;
   transition: opacity 1s linear;
 }
 
@@ -271,7 +271,7 @@ a:hover { color: #ffffff; }
 .decade-tile-serial {
   flex: none;
   font-size: 9px;
-  color: var(--sub);
+  color: #706d66;
 }
 
 .decades-empty {
