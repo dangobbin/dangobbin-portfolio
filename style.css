@@ -15,6 +15,13 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+}
+
 a { color: var(--ink); text-decoration: none; }
 a:hover { color: #ffffff; }
 
@@ -86,11 +93,12 @@ a:hover { color: #ffffff; }
 }
 
 .stage {
-  min-height: calc(100vh - 73px);
+  flex: 1;
+  min-height: 0;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  padding: clamp(40px, 6vw, 80px) clamp(20px, 4vw, 64px);
+  padding: clamp(20px, 6vw, 80px) clamp(20px, 4vw, 64px);
   background: #000;
 }
 
@@ -98,14 +106,21 @@ a:hover { color: #ffffff; }
   margin: 0;
   width: 100%;
   max-width: 1180px;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 18px;
 }
 
 .carousel-frame {
   width: 100%;
+  min-height: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #000;
 }
 
@@ -155,8 +170,7 @@ a:hover { color: #ffffff; }
 .carousel-frame img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 78vh;
+  height: 100%;
   object-fit: contain;
   border-radius: 1px;
   transition: opacity 1s linear;
@@ -171,10 +185,6 @@ a:hover { color: #ffffff; }
   max-width: 640px;
   margin: 0 auto;
   transition: opacity 1s linear;
-}
-
-@media (max-width: 600px) {
-  .carousel-frame img { max-height: 60vh; }
 }
 
 .navlink.is-active { color: var(--accent); }
