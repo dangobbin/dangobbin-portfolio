@@ -115,17 +115,13 @@ a:hover { color: #ffffff; }
 }
 
 .carousel-frame {
-  width: 100%;
   min-height: 0;
-  background: #000;
-}
-
-.carousel-foot {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  background: #000;
 }
 
 .carousel-caption-row {
