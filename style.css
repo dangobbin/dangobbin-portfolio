@@ -201,6 +201,7 @@ a:hover { color: #ffffff; }
   color: var(--sub);
   max-width: 640px;
   margin: 0 auto;
+  padding-right: 56px; /* keeps centered text clear of the serial on narrow (portrait) photos */
   transition: opacity 1s linear;
 }
 
