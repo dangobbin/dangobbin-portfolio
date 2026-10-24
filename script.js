@@ -83,7 +83,7 @@
           // stage the incoming photo off-screen to the left, still invisible,
           // without animating that jump
           img.style.transition = 'none';
-          img.style.transform = 'translateX(-18%)';
+          img.style.transform = 'translateX(-40%)';
           void img.offsetWidth; // commit that position before re-enabling the transition
           img.style.transition = '';
 
