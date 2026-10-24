@@ -186,8 +186,34 @@
     });
   }
 
-  show(current);
-  setOpacity(1);
-  toggleBtn && toggleBtn.classList.add('is-on');
-  runAuto();
+  // First load: show the name instead of a photo, hold it a moment, then
+  // cross-dissolve into the first photo (name fades out while the photo
+  // fades in, at the same time) instead of just cutting straight to a photo.
+  const intro = document.getElementById('intro');
+
+  function playIntro() {
+    show(current);
+    setOpacity(0); // photo starts invisible; the intro name is what's showing
+    toggleBtn && toggleBtn.classList.add('is-on');
+
+    if (!intro) { setOpacity(1); runAuto(); return; }
+
+    frame && frame.classList.add('intro-active');
+    updateImgMaxHeight();
+
+    Promise.all([
+      preload(slides[current].src),
+      new Promise(function (resolve) { setTimeout(resolve, 1800); }) // hold the name a moment
+    ]).then(function () {
+      intro.style.opacity = '0'; // cross-dissolve: both fade at the same time
+      setOpacity(1);
+      setTimeout(function () {
+        intro.style.display = 'none';
+        frame && frame.classList.remove('intro-active');
+        runAuto();
+      }, 1000);
+    });
+  }
+
+  playIntro();
 })();

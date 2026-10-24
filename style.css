@@ -186,6 +186,7 @@ a:hover { color: #ffffff; }
 }
 
 .carousel-frame {
+  position: relative;
   min-height: 0;
   max-width: 100%;
   display: flex;
@@ -193,6 +194,23 @@ a:hover { color: #ffffff; }
   align-items: center;
   gap: 8px;
   background: #000;
+}
+
+.carousel-frame.intro-active {
+  min-height: min(55vh, var(--img-max-height, 55vh));
+  width: 100%;
+}
+
+.intro {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  text-align: center;
+  transition: opacity 1s linear;
 }
 
 .carousel-caption-row {
