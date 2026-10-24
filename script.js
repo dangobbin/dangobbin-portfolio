@@ -1,13 +1,20 @@
-// Home carousel: picks a photo at random from photos/manifest.json every 8s
-// (6s stable + 2s fade-to-black, handled purely by the CSS keyframes in
-// style.css), never repeating the one just shown. Add more photos by
-// appending entries to manifest.json — no code changes needed.
+// Home carousel: picks a photo at random from photos/manifest.json, holds it
+// for 6s, then fades to black over 1s, swaps while invisible, and fades back
+// up over 1s (8s per cycle). Never repeats the photo just shown. Add more
+// photos by appending entries to manifest.json — no code changes needed.
+//
+// Everything is driven from one JS timer chain (no CSS "animation: infinite"
+// running on its own clock) so the fade and the content swap can never drift
+// apart — a drift is what caused the old photo to flash back briefly before
+// the swap.
 
 (async function () {
   const img = document.getElementById('carousel-img');
   const caption = document.getElementById('carousel-caption');
   const serial = document.getElementById('carousel-serial');
   if (!img || !caption) return; // carousel markup not on this page (e.g. "coming soon")
+
+  const fadeEls = [img, caption, serial].filter(Boolean);
 
   const res = await fetch('photos/manifest.json');
   const slides = await res.json();
@@ -23,6 +30,10 @@
     if (serial) serial.textContent = slide.serial || '';
   }
 
+  function setOpacity(v) {
+    fadeEls.forEach(function (el) { el.style.opacity = v; });
+  }
+
   function pickNext(prevIndex) {
     if (slides.length <= 1) return 0;
     let next;
@@ -32,16 +43,18 @@
     return next;
   }
 
-  show(current);
-
-  // first swap at the 7s mark (the dark point of the first 8s loop),
-  // then every 8s after that, staying aligned with the CSS animation
-  setTimeout(function () {
-    current = pickNext(current);
-    show(current);
-    setInterval(function () {
+  function cycle() {
+    setOpacity(0); // 1s fade to black
+    setTimeout(function () {
       current = pickNext(current);
-      show(current);
-    }, 8000);
-  }, 7000);
+      show(current); // swap while fully invisible
+      void img.offsetWidth; // force a reflow so opacity:0 is committed before fading back up
+      setOpacity(1); // 1s fade back up
+      setTimeout(cycle, 7000); // 1s to finish fading up + 6s stable, then do it again
+    }, 1000);
+  }
+
+  show(current);
+  setOpacity(1);
+  setTimeout(cycle, 6000); // first stable viewing period
 })();
