@@ -109,6 +109,23 @@ a:hover { color: #ffffff; }
   background: #000;
 }
 
+.carousel-foot {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-serial {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: 'Courier Prime', monospace;
+  font-size: 11px;
+  letter-spacing: .04em;
+  color: var(--sub);
+  animation: fadeToBlack 8s linear infinite;
+}
+
 .carousel-frame img {
   display: block;
   width: 100%;
@@ -116,7 +133,7 @@ a:hover { color: #ffffff; }
   max-height: 78vh;
   object-fit: contain;
   border-radius: 1px;
-  animation: fadeToBlack 7s linear infinite;
+  animation: fadeToBlack 8s linear infinite;
 }
 
 .carousel-caption {
@@ -126,16 +143,107 @@ a:hover { color: #ffffff; }
   text-align: center;
   color: var(--sub);
   max-width: 640px;
-  margin: 0;
-  animation: fadeToBlack 7s linear infinite;
+  margin: 0 auto;
+  animation: fadeToBlack 8s linear infinite;
 }
 
 @keyframes fadeToBlack {
-  0%, 71.43% { opacity: 1; }
-  85.71% { opacity: 0; }
+  0%, 75% { opacity: 1; }
+  87.5% { opacity: 0; }
   100% { opacity: 1; }
 }
 
 @media (max-width: 600px) {
   .carousel-frame img { max-height: 60vh; }
+}
+
+.navlink.is-active { color: var(--accent); }
+
+.decades-main {
+  padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 64px) clamp(60px, 8vw, 100px);
+}
+
+.decade-section + .decade-section {
+  margin-top: clamp(48px, 7vw, 88px);
+}
+
+.decade-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.decade-heading h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: clamp(22px, 3vw, 32px);
+  margin: 0;
+}
+
+.decade-heading span {
+  font-family: 'Courier Prime', monospace;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--sub);
+}
+
+.decade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 3px;
+}
+
+.decade-tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 1px;
+  outline-offset: 3px;
+  background: #000;
+}
+
+.decade-tile:focus-visible { outline: 2px solid var(--ink); }
+
+.decade-tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .5s cubic-bezier(.2,.8,.2,1);
+}
+
+.decade-tile:hover img,
+.decade-tile:focus-visible img { transform: scale(1.05); }
+
+.decade-tile-caption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 10px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 11px;
+  letter-spacing: .02em;
+  color: var(--ink);
+  background: linear-gradient(to top, rgba(0,0,0,.82), rgba(0,0,0,0) 75%);
+}
+
+.decade-tile-serial {
+  flex: none;
+  color: var(--sub);
+}
+
+.decades-empty {
+  font-family: 'Courier Prime', monospace;
+  color: var(--sub);
+  text-align: center;
+  padding: 80px 0;
 }

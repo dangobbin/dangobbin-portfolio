@@ -1,12 +1,548 @@
 [
   {
-    "src": "photos/cockpit-reportage.jpg",
-    "alt": "In-flight cockpit, reportage series",
-    "caption": "In-flight, reportage series — caption placeholder, year TK"
+    "src": "photos/dangobbin-2006-p0i2086.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2008",
+    "year": 2006,
+    "serial": "P0I2086"
   },
   {
-    "src": "photos/quarry-portrait.jpg",
-    "alt": "Reportage portrait, quarry workers",
-    "caption": "Reportage, quarry workers — caption placeholder, year TK"
+    "src": "photos/dangobbin-2006-p0i2285.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2008",
+    "year": 2006,
+    "serial": "P0I2285"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i3054.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2008",
+    "year": 2006,
+    "serial": "P0I3054"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i4393.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2008",
+    "year": 2006,
+    "serial": "P0I4393"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i4418.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2008",
+    "year": 2006,
+    "serial": "P0I4418"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i5642.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2008",
+    "year": 2006,
+    "serial": "P0I5642"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i6430.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2006",
+    "year": 2006,
+    "serial": "P0I6430"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i6436.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2006",
+    "year": 2006,
+    "serial": "P0I6436"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i6629.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2006",
+    "year": 2006,
+    "serial": "P0I6629"
+  },
+  {
+    "src": "photos/dangobbin-2006-p0i6940.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Democrati Republic of Congo - 2006",
+    "year": 2006,
+    "serial": "P0I6940"
+  },
+  {
+    "src": "photos/dangobbin-2015-dmg-9411.jpg",
+    "alt": "Photo, 2015",
+    "caption": "Italy - 2015",
+    "year": 2015,
+    "serial": "DMG-9411"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-5629.jpg",
+    "alt": "Photo, 2018",
+    "caption": "venice - Italy 2018",
+    "year": 2018,
+    "serial": "PH-5629"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-5646.jpg",
+    "alt": "Photo, 2018",
+    "caption": "venice - Italy 2018",
+    "year": 2018,
+    "serial": "PH-5646"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-5674.jpg",
+    "alt": "Photo, 2018",
+    "caption": "venice - Italy 2018",
+    "year": 2018,
+    "serial": "PH-5674"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8499-migrated.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Genova - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8499-MIGRATED"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8510.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Genova - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8510"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8530.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Genova - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8530"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8531.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Genova - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8531"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8672-migrated.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Venice - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8672-MIGRATED"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8679.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Venice - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8679"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8688-migrated.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Venice - Italy 2020",
+    "year": 2018,
+    "serial": "RF-8688-MIGRATED"
+  },
+  {
+    "src": "photos/dangobbin-2019-8d51040c.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Venice - Italy 2019",
+    "year": 2019,
+    "serial": "8D51040C"
+  },
+  {
+    "src": "photos/dangobbin-2019-img-2416.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Padova - Italy 2019",
+    "year": 2019,
+    "serial": "IMG-2416"
+  },
+  {
+    "src": "photos/dangobbin-2019-ph-0231.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Cefalù - Sicily 2019",
+    "year": 2019,
+    "serial": "PH-0231"
+  },
+  {
+    "src": "photos/dangobbin-2019-ph-6619.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Levanzo - Sicily 2019",
+    "year": 2019,
+    "serial": "PH-6619"
+  },
+  {
+    "src": "photos/dangobbin-2019-ph-6664.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Levanzo - Sicily 2019",
+    "year": 2019,
+    "serial": "PH-6664"
+  },
+  {
+    "src": "photos/dangobbin-2019-ph-6722.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Trapani - Sicily 2019",
+    "year": 2019,
+    "serial": "PH-6722"
+  },
+  {
+    "src": "photos/dangobbin-2019-ph-6846.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Marsala - Sicily 2019",
+    "year": 2019,
+    "serial": "PH-6846"
+  },
+  {
+    "src": "photos/dangobbin-2020-rf-2702.jpg",
+    "alt": "Photo, 2020",
+    "caption": "Caption placeholder, 2020",
+    "year": 2020,
+    "serial": "RF-2702"
+  },
+  {
+    "src": "photos/dangobbin-2020-rf-2770.jpg",
+    "alt": "Photo, 2020",
+    "caption": "Island of Mozia - Sicily 2020",
+    "year": 2020,
+    "serial": "RF-2770"
+  },
+  {
+    "src": "photos/dangobbin-2020-rf-2772.jpg",
+    "alt": "Photo, 2020",
+    "caption": "Island of Mozia - Sicily 2020",
+    "year": 2020,
+    "serial": "RF-2772"
+  },
+  {
+    "src": "photos/dangobbin-2020-rf-2782.jpg",
+    "alt": "Photo, 2020",
+    "caption": "Island of Mozia - Sicily 2020",
+    "year": 2020,
+    "serial": "RF-2782"
+  },
+  {
+    "src": "photos/dangobbin-2020-rf-2791.jpg",
+    "alt": "Photo, 2020",
+    "caption": "Trapany - Sicily 2020",
+    "year": 2020,
+    "serial": "RF-2791"
+  },
+  {
+    "src": "photos/dangobbin-2020-rf-2801.jpg",
+    "alt": "Photo, 2020",
+    "caption": "Trapany - Sicily 2020",
+    "year": 2020,
+    "serial": "RF-2801"
+  },
+  {
+    "src": "photos/dangobbin-2021-dsc6688.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Adriatic sea - Italy 2021",
+    "year": 2021,
+    "serial": "DSC6688"
+  },
+  {
+    "src": "photos/dangobbin-2021-dsc6696.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Adriatic sea - Italy 2021",
+    "year": 2021,
+    "serial": "DSC6696"
+  },
+  {
+    "src": "photos/dangobbin-2021-dsc6702.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Adriatic sea - Italy 2021",
+    "year": 2021,
+    "serial": "DSC6702"
+  },
+  {
+    "src": "photos/dangobbin-2021-dsc6704.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Adriatic sea - Italy 2021",
+    "year": 2021,
+    "serial": "DSC6704"
+  },
+  {
+    "src": "photos/dangobbin-2021-dsc6724.jpg",
+    "alt": "Photo, 2021",
+    "caption": "italian landcsape - 2021",
+    "year": 2021,
+    "serial": "DSC6724"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-5489.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Venice - Italy 2021",
+    "year": 2021,
+    "serial": "RF-5489"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-5497.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Venice - Italy 2021",
+    "year": 2021,
+    "serial": "RF-5497"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-5568.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Marghera - Italy 2021",
+    "year": 2021,
+    "serial": "RF-5568"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-5619.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Adriatic sea - Italy 2021",
+    "year": 2021,
+    "serial": "RF-5619"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6579.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6579"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6581.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6581"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6588.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6588"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6597.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6597"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6624.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6624"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6627.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6627"
+  },
+  {
+    "src": "photos/dangobbin-2021-rf-6638.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Gibellina - Sicily 2021",
+    "year": 2021,
+    "serial": "RF-6638"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7041.jpg",
+    "alt": "Photo, 2022",
+    "caption": "Palermo - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7041"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7198.jpg",
+    "alt": "Photo, 2022",
+    "caption": "Palermo - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7198"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7211.jpg",
+    "alt": "Photo, 2022",
+    "caption": "Palermo - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7211"
+  },
+  {
+    "src": "photos/dangobbin-2023-img-0730.jpg",
+    "alt": "Photo, 2023",
+    "caption": "Venice - Italy 2023",
+    "year": 2023,
+    "serial": "IMG-0730"
+  },
+  {
+    "src": "photos/dangobbin-2023-img-0895.jpg",
+    "alt": "Photo, 2023",
+    "caption": "Milano - Italy 2023",
+    "year": 2023,
+    "serial": "IMG-0895"
+  },
+  {
+    "src": "photos/dangobbin-2023-img-2177.jpg",
+    "alt": "Photo, 2023",
+    "caption": "Caption placeholder, 2023",
+    "year": 2023,
+    "serial": "IMG-2177"
+  },
+  {
+    "src": "photos/dangobbin-2025-red08473.jpg",
+    "alt": "Photo, 2025",
+    "caption": "Mauthausen camp - Austria 2025",
+    "year": 2025,
+    "serial": "RED08473"
+  },
+  {
+    "src": "photos/dangobbin-2025-red08476.jpg",
+    "alt": "Photo, 2025",
+    "caption": "Mauthausen camp - Austria 2025",
+    "year": 2025,
+    "serial": "RED08476"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04535.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04535"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04553.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04553"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04672.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04672"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04694.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04694"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04715.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04715"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04718.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04718"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04725.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04725"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04747.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04747"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04749.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Shanghai - China 2026",
+    "year": 2026,
+    "serial": "RED04749"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04810.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Caption placeholder, 2026",
+    "year": 2026,
+    "serial": "RED04810"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04815.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Caption placeholder, 2026",
+    "year": 2026,
+    "serial": "RED04815"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04819.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Caption placeholder, 2026",
+    "year": 2026,
+    "serial": "RED04819"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04820.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Caption placeholder, 2026",
+    "year": 2026,
+    "serial": "RED04820"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04823.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Caption placeholder, 2026",
+    "year": 2026,
+    "serial": "RED04823"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04843.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Caption placeholder, 2026",
+    "year": 2026,
+    "serial": "RED04843"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04854.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Pune - India 2026",
+    "year": 2026,
+    "serial": "RED04854"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04873.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Pune - India 2026",
+    "year": 2026,
+    "serial": "RED04873"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04874.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Pune - India 2026",
+    "year": 2026,
+    "serial": "RED04874"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04877.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Pune - India 2026",
+    "year": 2026,
+    "serial": "RED04877"
+  },
+  {
+    "src": "photos/dangobbin-2026-red04882.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Pune - India 2026",
+    "year": 2026,
+    "serial": "RED04882"
   }
 ]
