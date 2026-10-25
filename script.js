@@ -198,19 +198,24 @@
     });
   }
 
-  // First load: show the name instead of a photo, hold it a moment, then
-  // cross-dissolve into the first photo (name fades out while the photo
-  // fades in, at the same time) instead of just cutting straight to a photo.
+  // First load: show the first photo right away and let the name sit on top
+  // of it as an overlay that fades out on its own, instead of a two-element
+  // crossfade (name fading out while the photo faded in, at the same time).
+  // The crossfade kept bouncing -- the name briefly reappearing over the
+  // photo -- on real devices even after fixing a layout shift that could
+  // trigger it, and it didn't reproduce reliably enough here to chase
+  // further. A single element fading alone, with nothing else changing at
+  // the same time, has no room to glitch into "reappearing".
   const intro = document.getElementById('intro');
 
   function playIntro() {
-    setOpacity(0); // photo starts invisible; the intro name is what's showing
     toggleBtn && toggleBtn.classList.add('is-on');
+    show(current);
+    setOpacity(1);
 
-    if (!intro) { show(current); setOpacity(1); runAuto(); return; }
+    if (!intro) { runAuto(); return; }
 
     frame && frame.classList.add('intro-active');
-    showCaption(current); // settle the frame's final height now, well before the crossfade
 
     // .intro starts at opacity:0 in the CSS itself (not just here), so there
     // is nothing to flash in a fallback font while the webfont loads. Only
@@ -226,14 +231,9 @@
       void intro.offsetWidth; // commit the instant reveal before re-enabling the transition
       intro.style.transition = '';
 
-      return Promise.all([
-        preload(slides[current].src),
-        new Promise(function (resolve) { setTimeout(resolve, 1800); }) // hold the name a moment
-      ]);
+      return new Promise(function (resolve) { setTimeout(resolve, 1800); }); // hold the name a moment
     }).then(function () {
-      show(current); // first real src on the visible <img> -> already preloaded, paints instantly (no flash)
-      intro.style.opacity = '0'; // cross-dissolve: both fade at the same time
-      setOpacity(1);
+      intro.style.opacity = '0'; // fade the name away, off the photo
       setTimeout(function () {
         intro.style.display = 'none';
         frame && frame.classList.remove('intro-active');

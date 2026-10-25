@@ -220,6 +220,7 @@ a:hover { color: #ffffff; }
 .intro .logo-name,
 .intro .logo-role {
   font-size: clamp(34.5px, 7vw, 56px);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, .7); /* name now sits over the first photo, not a plain black backdrop */
 }
 
 .carousel-caption-row {
