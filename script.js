@@ -39,17 +39,17 @@
   const figure = document.querySelector('.carousel-figure');
   const frame = document.querySelector('.carousel-frame');
   const capRow = document.querySelector('.carousel-caption-row');
-  const controls = document.querySelector('.carousel-controls');
   const header = document.querySelector('.site-header');
   const footer = document.querySelector('.site-footer');
 
-  // Measures the real, rendered chrome (header + stage padding + gaps +
-  // caption/controls/footer rows) and sets how much vertical room is
-  // actually left for the photo as a CSS variable — instead of guessing a
-  // fixed px budget, which on a real device (different font metrics,
-  // Safari's own chrome, etc.) kept being wrong in one direction or another.
+  // Measures the real, rendered chrome (header + stage padding + frame gap +
+  // caption row + footer, which now holds the slideshow/music controls and
+  // the copyright line) and sets how much vertical room is actually left for
+  // the photo as a CSS variable — instead of guessing a fixed px budget,
+  // which on a real device (different font metrics, Safari's own chrome,
+  // etc.) kept being wrong in one direction or another.
   function updateImgMaxHeight() {
-    if (!stage || !figure || !frame || !capRow || !controls || !header) return;
+    if (!stage || !figure || !frame || !capRow || !header || !footer) return;
     // on touch devices the header is fixed/out of flow (just a menu icon;
     // see style.css) and .stage's own padding-top already clears it, so it
     // doesn't also cost layout height the way it does on desktop
@@ -57,11 +57,8 @@
     const headerHeight = (headerPos === 'fixed' || headerPos === 'absolute') ? 0 : header.offsetHeight;
     const stageCs = getComputedStyle(stage);
     const stagePadding = parseFloat(stageCs.paddingTop) + parseFloat(stageCs.paddingBottom);
-    const figureGap = parseFloat(getComputedStyle(figure).rowGap) || 0;
     const frameGap = parseFloat(getComputedStyle(frame).rowGap) || 0;
-    const footerHeight = footer ? footer.offsetHeight : 0;
-    const chrome = headerHeight + stagePadding + figureGap + frameGap +
-      capRow.offsetHeight + controls.offsetHeight + footerHeight;
+    const chrome = headerHeight + stagePadding + frameGap + capRow.offsetHeight + footer.offsetHeight;
     const available = Math.max(window.innerHeight - chrome, 120);
     document.documentElement.style.setProperty('--img-max-height', available + 'px');
   }

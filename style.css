@@ -306,16 +306,6 @@ a:hover { color: #ffffff; }
 
 .navlink.is-active { color: var(--accent); }
 
-.music-toggle {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-}
-
-.music-toggle.is-on { color: var(--accent); }
-
 .simple-page {
   flex: 1;
   min-height: 0;
@@ -358,6 +348,13 @@ a:hover { color: #ffffff; }
 .site-footer {
   padding: 16px clamp(20px, 4vw, 64px);
   text-align: center;
+}
+
+.site-footer .carousel-controls { justify-content: center; }
+
+.site-footer > .carousel-btn-text,
+.site-footer > .carousel-controls {
+  margin-bottom: 10px;
 }
 
 .footer-text {
