@@ -193,19 +193,34 @@
   const intro = document.getElementById('intro');
 
   function playIntro() {
-    show(current);
     setOpacity(0); // photo starts invisible; the intro name is what's showing
     toggleBtn && toggleBtn.classList.add('is-on');
 
-    if (!intro) { setOpacity(1); runAuto(); return; }
+    if (!intro) { show(current); setOpacity(1); runAuto(); return; }
 
     frame && frame.classList.add('intro-active');
     updateImgMaxHeight();
 
-    Promise.all([
-      preload(slides[current].src),
-      new Promise(function (resolve) { setTimeout(resolve, 1800); }) // hold the name a moment
-    ]).then(function () {
+    // .intro starts at opacity:0 in the CSS itself (not just here), so there
+    // is nothing to flash in a fallback font while the webfont loads. Only
+    // reveal it, instantly, once document.fonts confirms the real font is
+    // ready — otherwise "Daniele Gobbin photographer" can render one line
+    // too wide in the fallback font, wrap to two lines, and visibly re-wrap
+    // to one line a moment later once the webfont swaps in.
+    const fontsReady = (document.fonts && document.fonts.ready) ? document.fonts.ready : Promise.resolve();
+
+    fontsReady.then(function () {
+      intro.style.transition = 'none';
+      intro.style.opacity = '1';
+      void intro.offsetWidth; // commit the instant reveal before re-enabling the transition
+      intro.style.transition = '';
+
+      return Promise.all([
+        preload(slides[current].src),
+        new Promise(function (resolve) { setTimeout(resolve, 1800); }) // hold the name a moment
+      ]);
+    }).then(function () {
+      show(current); // first real src on the visible <img> -> already preloaded, paints instantly (no flash)
       intro.style.opacity = '0'; // cross-dissolve: both fade at the same time
       setOpacity(1);
       setTimeout(function () {
