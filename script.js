@@ -74,6 +74,17 @@
     const slide = slides[index];
     img.src = slide.src;
     img.alt = slide.alt;
+    showCaption(index);
+  }
+
+  // Caption/serial only (no image swap). Split out so the intro sequence can
+  // set the real caption text early, during the name-hold, before the frame's
+  // height has to stay still for the crossfade -- otherwise the caption row
+  // going from empty to its real height shifts --img-max-height (and the
+  // frame's height with it) at the exact instant the name starts fading,
+  // which reads as a bounce/flash of the name on WebKit.
+  function showCaption(index) {
+    const slide = slides[index];
     caption.textContent = slide.caption;
     if (serial) serial.textContent = slide.serial || '';
     updateImgMaxHeight(); // caption length can change row height, so recheck each time
@@ -199,7 +210,7 @@
     if (!intro) { show(current); setOpacity(1); runAuto(); return; }
 
     frame && frame.classList.add('intro-active');
-    updateImgMaxHeight();
+    showCaption(current); // settle the frame's final height now, well before the crossfade
 
     // .intro starts at opacity:0 in the CSS itself (not just here), so there
     // is nothing to flash in a fallback font while the webfont loads. Only

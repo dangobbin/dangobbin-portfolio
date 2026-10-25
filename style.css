@@ -214,6 +214,7 @@ a:hover { color: #ffffff; }
   text-align: center;
   opacity: 0; /* stays invisible until script.js confirms the webfont is ready */
   transition: opacity 1s linear;
+  will-change: opacity;
 }
 
 .intro .logo-name,
