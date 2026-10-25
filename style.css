@@ -355,6 +355,19 @@ a:hover { color: #ffffff; }
 
 .contact-email:hover { color: var(--ink); }
 
+.site-footer {
+  padding: 16px clamp(20px, 4vw, 64px);
+  text-align: center;
+}
+
+.music-credit {
+  margin: 0;
+  font-family: 'Courier Prime', monospace;
+  font-size: 11px;
+  letter-spacing: .04em;
+  color: var(--sub);
+}
+
 .decades-main {
   padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 64px) clamp(60px, 8vw, 100px);
 }
