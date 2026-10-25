@@ -306,6 +306,45 @@ a:hover { color: #ffffff; }
 
 .navlink.is-active { color: var(--accent); }
 
+.simple-page {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(40px, 8vw, 100px) clamp(20px, 4vw, 64px);
+}
+
+.bio-text {
+  max-width: 640px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+
+.contact-block {
+  text-align: center;
+}
+
+.contact-label {
+  margin: 0 0 14px;
+  font-family: 'Courier Prime', monospace;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--sub);
+}
+
+.contact-email {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: clamp(22px, 4.5vw, 36px);
+  color: var(--accent);
+}
+
+.contact-email:hover { color: var(--ink); }
+
 .decades-main {
   padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 64px) clamp(60px, 8vw, 100px);
 }
