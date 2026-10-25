@@ -70,11 +70,494 @@
     "serial": "P0I6940"
   },
   {
+    "src": "photos/dangobbin-2006-shoots-double.jpg",
+    "alt": "Photo, 2006",
+    "caption": "Caption placeholder, 2006",
+    "year": 2006,
+    "serial": "SHOOTS-DOUBLE"
+  },
+  {
+    "src": "photos/dangobbin-2011-img-1582-2.jpg",
+    "alt": "Photo, 2011",
+    "caption": "studio work 2011",
+    "year": 2011,
+    "serial": "IMG-1582-2"
+  },
+  {
+    "src": "photos/dangobbin-2011-img-7092.jpg",
+    "alt": "Photo, 2011",
+    "caption": "studio work 2011",
+    "year": 2011,
+    "serial": "IMG-7092"
+  },
+  {
+    "src": "photos/dangobbin-2011-img-7121.jpg",
+    "alt": "Photo, 2011",
+    "caption": "studio work 2011",
+    "year": 2011,
+    "serial": "IMG-7121"
+  },
+  {
+    "src": "photos/dangobbin-2011-time-anonymous.jpg",
+    "alt": "Photo, 2011",
+    "caption": "studio work 2011",
+    "year": 2011,
+    "serial": "TIME-ANONYMOUS"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-1753.jpg",
+    "alt": "Photo, 2012",
+    "caption": "Venice 2012",
+    "year": 2012,
+    "serial": "IMG-1753"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-1891.jpg",
+    "alt": "Photo, 2012",
+    "caption": "Venice 2012",
+    "year": 2012,
+    "serial": "IMG-1891"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-2038.jpg",
+    "alt": "Photo, 2012",
+    "caption": "Venice 2012",
+    "year": 2012,
+    "serial": "IMG-2038"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-3787.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-3787"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-3895.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-3895"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-4745.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-4745"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-4765.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-4765"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-4779.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-4779"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-8659.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-8659"
+  },
+  {
+    "src": "photos/dangobbin-2012-img-8667.jpg",
+    "alt": "Photo, 2012",
+    "caption": "studio work 2012",
+    "year": 2012,
+    "serial": "IMG-8667"
+  },
+  {
+    "src": "photos/dangobbin-2013-img-5167.jpg",
+    "alt": "Photo, 2013",
+    "caption": "Studio Work 2013",
+    "year": 2013,
+    "serial": "IMG-5167"
+  },
+  {
+    "src": "photos/dangobbin-2013-img-5208-2.jpg",
+    "alt": "Photo, 2013",
+    "caption": "Studio Work 2013",
+    "year": 2013,
+    "serial": "IMG-5208-2"
+  },
+  {
+    "src": "photos/dangobbin-2015-dmg-3960.jpg",
+    "alt": "Photo, 2015",
+    "caption": "Studio Work 2015",
+    "year": 2015,
+    "serial": "DMG-3960"
+  },
+  {
     "src": "photos/dangobbin-2015-dmg-9411.jpg",
     "alt": "Photo, 2015",
     "caption": "Italy - 2015",
     "year": 2015,
     "serial": "DMG-9411"
+  },
+  {
+    "src": "photos/dangobbin-2015-img-1892.jpg",
+    "alt": "Photo, 2015",
+    "caption": "Studio Work 2015",
+    "year": 2015,
+    "serial": "IMG-1892"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-6561.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-6561"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-6576.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-6576"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-6689.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-6689"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-7056.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-7056"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-7075.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-7075"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-7182.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-7182"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-7248.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-7248"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-7366.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-7366"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-8194.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-8194"
+  },
+  {
+    "src": "photos/dangobbin-2016-mg-8200.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "MG-8200"
+  },
+  {
+    "src": "photos/dangobbin-2016-grana-padano-mg-6622-flip.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "GRANA-PADANO-MG-6622-FLIP"
+  },
+  {
+    "src": "photos/dangobbin-2016-redframe-18.jpg",
+    "alt": "Photo, 2016",
+    "caption": "Studio Work 2016",
+    "year": 2016,
+    "serial": "REDFRAME-18"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-0351.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-0351"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-0448.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-0448"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-0467.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-0467"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-0496.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-0496"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-0515.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-0515"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-2312.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Tony Gallo 2017",
+    "year": 2017,
+    "serial": "MG-2312"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-2387.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Tony Gallo 2017",
+    "year": 2017,
+    "serial": "MG-2387"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-2395.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Tony Gallo 2017",
+    "year": 2017,
+    "serial": "MG-2395"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-2883.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Studio work 2017",
+    "year": 2017,
+    "serial": "MG-2883"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-4616.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-4616"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-4633.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-4633"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-4692.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-4692"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-4792.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-4792"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-4890.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-4890"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-5019.jpg",
+    "alt": "Photo, 2017",
+    "caption": "studio work 2017",
+    "year": 2017,
+    "serial": "MG-5019"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7648.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7648"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7706.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7706"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7708.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7708"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7725.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7725"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7781.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7781"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7829.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7829"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7860.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7860"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-7946.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Lanzarote - Spain 2017",
+    "year": 2017,
+    "serial": "MG-7946"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-8891.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Russel Athletic 2017",
+    "year": 2017,
+    "serial": "MG-8891"
+  },
+  {
+    "src": "photos/dangobbin-2017-mg-8901.jpg",
+    "alt": "Photo, 2017",
+    "caption": "Russel Athletic 2017",
+    "year": 2017,
+    "serial": "MG-8901"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01248.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01248"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01262.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01262"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01528.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01528"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01561.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01561"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01699.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01699"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01806.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01806"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01834.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01834"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-01851.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-01851"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-02380-modifica.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-02380-MODIFICA"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-02380.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-02380"
+  },
+  {
+    "src": "photos/dangobbin-2018-00255.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "00255"
+  },
+  {
+    "src": "photos/dangobbin-2018-03154.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "03154"
+  },
+  {
+    "src": "photos/dangobbin-2018-03286.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "03286"
   },
   {
     "src": "photos/dangobbin-2018-ph-5629.jpg",
@@ -98,11 +581,130 @@
     "serial": "PH-5674"
   },
   {
-    "src": "photos/dangobbin-2018-rf-8499-migrated.jpg",
+    "src": "photos/dangobbin-2018-ph-5987.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-5987"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6021.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6021"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6234.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6234"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6238.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6238"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6244.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6244"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6415.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6415"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6556.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6556"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6704.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6704"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6805.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6805"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6810.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6810"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-6836.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-6836"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-8397.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-8397"
+  },
+  {
+    "src": "photos/dangobbin-2018-ph-8458.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "PH-8458"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-0158.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "RF-0158"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-0194.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "RF-0194"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-0216.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "RF-0216"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-0287.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "RF-0287"
+  },
+  {
+    "src": "photos/dangobbin-2018-rf-8499.jpg",
     "alt": "Photo, 2018",
     "caption": "Genova - Italy 2020",
     "year": 2018,
-    "serial": "RF-8499-MIGRATED"
+    "serial": "RF-8499"
   },
   {
     "src": "photos/dangobbin-2018-rf-8510.jpg",
@@ -126,11 +728,11 @@
     "serial": "RF-8531"
   },
   {
-    "src": "photos/dangobbin-2018-rf-8672-migrated.jpg",
+    "src": "photos/dangobbin-2018-rf-8672.jpg",
     "alt": "Photo, 2018",
     "caption": "Venice - Italy 2020",
     "year": 2018,
-    "serial": "RF-8672-MIGRATED"
+    "serial": "RF-8672"
   },
   {
     "src": "photos/dangobbin-2018-rf-8679.jpg",
@@ -140,11 +742,18 @@
     "serial": "RF-8679"
   },
   {
-    "src": "photos/dangobbin-2018-rf-8688-migrated.jpg",
+    "src": "photos/dangobbin-2018-rf-8688.jpg",
     "alt": "Photo, 2018",
     "caption": "Venice - Italy 2020",
     "year": 2018,
-    "serial": "RF-8688-MIGRATED"
+    "serial": "RF-8688"
+  },
+  {
+    "src": "photos/dangobbin-2018-redframe-10.jpg",
+    "alt": "Photo, 2018",
+    "caption": "Studio Work 2018",
+    "year": 2018,
+    "serial": "REDFRAME-10"
   },
   {
     "src": "photos/dangobbin-2019-8d51040c.jpg",
@@ -159,6 +768,13 @@
     "caption": "Padova - Italy 2019",
     "year": 2019,
     "serial": "IMG-2416"
+  },
+  {
+    "src": "photos/dangobbin-2019-dsf3420.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Caption placeholder, 2019",
+    "year": 2019,
+    "serial": "DSF3420"
   },
   {
     "src": "photos/dangobbin-2019-ph-0231.jpg",
@@ -194,6 +810,34 @@
     "caption": "Marsala - Sicily 2019",
     "year": 2019,
     "serial": "PH-6846"
+  },
+  {
+    "src": "photos/dangobbin-2019-rf-0433.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Padova - Italy 2019",
+    "year": 2019,
+    "serial": "RF-0433"
+  },
+  {
+    "src": "photos/dangobbin-2019-rf-0447.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Padova - Italy 2019",
+    "year": 2019,
+    "serial": "RF-0447"
+  },
+  {
+    "src": "photos/dangobbin-2019-rf-0449.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Padova - Italy 2019",
+    "year": 2019,
+    "serial": "RF-0449"
+  },
+  {
+    "src": "photos/dangobbin-2019-rf-0450.jpg",
+    "alt": "Photo, 2019",
+    "caption": "Padova - Italy 2019",
+    "year": 2019,
+    "serial": "RF-0450"
   },
   {
     "src": "photos/dangobbin-2020-rf-2702.jpg",
@@ -1190,6 +1834,13 @@
     "serial": "RED03818"
   },
   {
+    "src": "photos/dangobbin-2025-red07661.jpg",
+    "alt": "Photo, 2025",
+    "caption": "Arcangelo Sassolino 2025",
+    "year": 2025,
+    "serial": "RED07661"
+  },
+  {
     "src": "photos/dangobbin-2025-red08473.jpg",
     "alt": "Photo, 2025",
     "caption": "Mauthausen camp - Austria 2025",
@@ -1202,6 +1853,13 @@
     "caption": "Mauthausen camp - Austria 2025",
     "year": 2025,
     "serial": "RED08476"
+  },
+  {
+    "src": "photos/dangobbin-2026-red02382.jpg",
+    "alt": "Photo, 2026",
+    "caption": "Self-studies - Susana Pilar 2026",
+    "year": 2026,
+    "serial": "RED02382"
   },
   {
     "src": "photos/dangobbin-2026-red04535.jpg",
