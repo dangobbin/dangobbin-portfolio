@@ -224,7 +224,9 @@ a:hover { color: #ffffff; }
 }
 
 .carousel-caption-row {
-  position: relative;
+  display: grid;
+  grid-template-columns: 56px 1fr 56px;
+  align-items: center;
   width: 100%;
 }
 
@@ -270,10 +272,8 @@ a:hover { color: #ffffff; }
 .carousel-btn-text.is-on:focus-visible { color: var(--ink); }
 
 .carousel-serial {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  grid-column: 3;
+  text-align: right;
   font-family: 'Courier Prime', monospace;
   font-size: 9px;
   letter-spacing: .04em;
@@ -293,6 +293,7 @@ a:hover { color: #ffffff; }
 }
 
 .carousel-caption {
+  grid-column: 2;
   font-family: 'Courier Prime', monospace;
   font-size: 13px;
   letter-spacing: .01em;
@@ -300,7 +301,6 @@ a:hover { color: #ffffff; }
   color: var(--sub);
   max-width: 640px;
   margin: 0 auto;
-  padding-right: 56px; /* keeps centered text clear of the serial on narrow (portrait) photos */
   transition: opacity .6s linear;
 }
 
