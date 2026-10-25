@@ -360,13 +360,15 @@ a:hover { color: #ffffff; }
   text-align: center;
 }
 
-.music-credit {
+.footer-text {
   margin: 0;
   font-family: 'Courier Prime', monospace;
   font-size: 11px;
   letter-spacing: .04em;
   color: var(--sub);
 }
+
+.footer-text + .footer-text { margin-top: 4px; }
 
 .decades-main {
   padding: clamp(32px, 5vw, 56px) clamp(20px, 4vw, 64px) clamp(60px, 8vw, 100px);
