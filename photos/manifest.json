@@ -238,6 +238,41 @@
     "serial": "RF-2801"
   },
   {
+    "src": "photos/dangobbin-2021-img-1135.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Palermo - Sicily 2021",
+    "year": 2021,
+    "serial": "IMG-1135"
+  },
+  {
+    "src": "photos/dangobbin-2021-img-1152.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Palermo - Sicily 2021",
+    "year": 2021,
+    "serial": "IMG-1152"
+  },
+  {
+    "src": "photos/dangobbin-2021-img-1307.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Palermo - Sicily 2021",
+    "year": 2021,
+    "serial": "IMG-1307"
+  },
+  {
+    "src": "photos/dangobbin-2021-img-1327.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Palermo - Sicily 2021",
+    "year": 2021,
+    "serial": "IMG-1327"
+  },
+  {
+    "src": "photos/dangobbin-2021-img-1796.jpg",
+    "alt": "Photo, 2021",
+    "caption": "Bologna - Italy 2021",
+    "year": 2021,
+    "serial": "IMG-1796"
+  },
+  {
     "src": "photos/dangobbin-2021-dsc0002.jpg",
     "alt": "Photo, 2021",
     "caption": "Outhere 2021",
@@ -434,102 +469,459 @@
     "serial": "RF-6638"
   },
   {
+    "src": "photos/dangobbin-2022-dsc1919.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC1919"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc1961.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC1961"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc1965.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC1965"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2015.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2015"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2017.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2017"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2104.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2104"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2150.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2150"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2221-2.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2221-2"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2268.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2268"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2276.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2276"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2317.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2317"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2327.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2327"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2428.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2428"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2483.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2483"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2540.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2540"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2559.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2559"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2732.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2732"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2770.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2770"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2795.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2795"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2808.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2808"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2813.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2813"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc2819.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "DSC2819"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc3030.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3030"
   },
   {
+    "src": "photos/dangobbin-2022-dsc3215.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3215"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3229.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3229"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc3235.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3235"
   },
   {
+    "src": "photos/dangobbin-2022-dsc3236.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3236"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3276.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3276"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc3278.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3278"
   },
   {
+    "src": "photos/dangobbin-2022-dsc3321.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3321"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc3361.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3361"
   },
   {
+    "src": "photos/dangobbin-2022-dsc3364.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3364"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3390.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3390"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3431.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3431"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3465.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3465"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc3477.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3477"
   },
   {
+    "src": "photos/dangobbin-2022-dsc3572.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "DSC3572"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc3576.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3576"
   },
   {
     "src": "photos/dangobbin-2022-dsc3605.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "DSC3605"
   },
   {
+    "src": "photos/dangobbin-2022-dsc3663.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3663"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3672.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3672"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3676.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3676"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3789.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3789"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3822.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3822"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3893.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3893"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3905.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3905"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc3958.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC3958"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4028.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC4028"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4068.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC4068"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4211.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "DSC4211"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4362.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC4362"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4407.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC4407"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4494.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC4494"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc4552.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4552"
   },
   {
     "src": "photos/dangobbin-2022-dsc4573.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4573"
   },
   {
     "src": "photos/dangobbin-2022-dsc4612.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4612"
   },
   {
     "src": "photos/dangobbin-2022-dsc4633.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4633"
   },
   {
     "src": "photos/dangobbin-2022-dsc4654.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4654"
   },
   {
+    "src": "photos/dangobbin-2022-dsc4701.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC4701"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc4908.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4908"
   },
   {
+    "src": "photos/dangobbin-2022-dsc4941.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC4941"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc4943.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC4943"
+  },
+  {
     "src": "photos/dangobbin-2022-dsc4960.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in Romania 2022",
+    "caption": "steel mill - Romania 2022",
     "year": 2022,
     "serial": "DSC4960"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc5011.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC5011"
+  },
+  {
+    "src": "photos/dangobbin-2022-dsc5027.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "DSC5027"
   },
   {
     "src": "photos/dangobbin-2022-rf-7041.jpg",
@@ -553,32 +945,151 @@
     "serial": "RF-7211"
   },
   {
+    "src": "photos/dangobbin-2022-rf-7274.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7274"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7434.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7434"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7435.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7435"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7444.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7444"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7510.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7510"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7666.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7666"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7686.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Italy 2022",
+    "year": 2022,
+    "serial": "RF-7686"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7829.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "RF-7829"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-7840.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "RF-7840"
+  },
+  {
     "src": "photos/dangobbin-2022-rf-7870.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "RF-7870"
   },
   {
     "src": "photos/dangobbin-2022-rf-7896.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "RF-7896"
   },
   {
     "src": "photos/dangobbin-2022-rf-7944.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "RF-7944"
   },
   {
     "src": "photos/dangobbin-2022-rf-7955.jpg",
     "alt": "Photo, 2022",
-    "caption": "steel mill in France 2022",
+    "caption": "steel mill - France 2022",
     "year": 2022,
     "serial": "RF-7955"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8038.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - France 2022",
+    "year": 2022,
+    "serial": "RF-8038"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8103.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "RF-8103"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8104.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "RF-8104"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8148.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "RF-8148"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8172.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Swisse 2022",
+    "year": 2022,
+    "serial": "RF-8172"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8249.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "RF-8249"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8259.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "RF-8259"
+  },
+  {
+    "src": "photos/dangobbin-2022-rf-8281.jpg",
+    "alt": "Photo, 2022",
+    "caption": "steel mill - Romania 2022",
+    "year": 2022,
+    "serial": "RF-8281"
   },
   {
     "src": "photos/dangobbin-2023-img-0730.jpg",
@@ -660,14 +1171,14 @@
   {
     "src": "photos/dangobbin-2024-red03030.jpg",
     "alt": "Photo, 2024",
-    "caption": "Casa Circondariale di Padfova 2024",
+    "caption": "Casa Circondariale di Padova 2024",
     "year": 2024,
     "serial": "RED03030"
   },
   {
     "src": "photos/dangobbin-2024-red03049.jpg",
     "alt": "Photo, 2024",
-    "caption": "Casa Circondariale di Padfova 2024",
+    "caption": "Casa Circondariale di Padova 2024",
     "year": 2024,
     "serial": "RED03049"
   },
