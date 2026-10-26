@@ -197,11 +197,6 @@ a:hover { color: #ffffff; }
   background: #000;
 }
 
-.carousel-frame.intro-active {
-  min-height: min(55vh, var(--img-max-height, 55vh));
-  width: 100%;
-}
-
 .intro {
   position: absolute;
   inset: 0;

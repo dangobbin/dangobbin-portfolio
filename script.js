@@ -233,7 +233,12 @@
 
     if (!intro) { runAuto(); return; }
 
-    frame && frame.classList.add('intro-active');
+    // No frame-stretching class here: the photo is already visible (show()
+    // ran above), so the frame already has its real content-based size from
+    // it. Forcing the frame to the stage's full width while a narrower
+    // photo sat inside it used to shift the right-anchored serial number
+    // away from the photo's actual edge for the whole hold, snapping back
+    // when that width was lifted.
 
     // .intro starts at opacity:0 in the CSS itself (not just here), so there
     // is nothing to flash in a fallback font while the webfont loads. Only
@@ -254,7 +259,6 @@
       intro.style.opacity = '0'; // fade the name away, off the photo
       setTimeout(function () {
         intro.style.display = 'none';
-        frame && frame.classList.remove('intro-active');
         runAuto();
       }, 1000);
     });
