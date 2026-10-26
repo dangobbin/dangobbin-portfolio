@@ -18,6 +18,7 @@
   }
 
   toggle.addEventListener('click', function () {
+    toggle.classList.remove('hint'); // interacting dismisses the nudge for good
     if (audio.paused) {
       audio.play().then(function () { setState(true); }).catch(function () { setState(false); });
     } else {
@@ -30,5 +31,16 @@
   try { wantsOn = localStorage.getItem('dangobbin-music') === '1'; } catch (e) {}
   if (wantsOn) {
     audio.play().then(function () { setState(true); }).catch(function () { setState(false); });
+  } else {
+    // One-time, self-dismissing nudge toward the toggle: a few gentle
+    // pulses on the button itself, no new elements, no layout shift. Shown
+    // once ever (tracked in localStorage), never repeats across pages or
+    // later visits, so it can't become annoying.
+    let hintShown = false;
+    try { hintShown = localStorage.getItem('dangobbin-music-hint-shown') === '1'; } catch (e) {}
+    if (!hintShown) {
+      try { localStorage.setItem('dangobbin-music-hint-shown', '1'); } catch (e) {}
+      setTimeout(function () { toggle.classList.add('hint'); }, 1500);
+    }
   }
 })();

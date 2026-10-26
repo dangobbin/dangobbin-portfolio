@@ -271,6 +271,13 @@ a:hover { color: #ffffff; }
 .carousel-btn-text.is-on:hover,
 .carousel-btn-text.is-on:focus-visible { color: var(--ink); }
 
+@keyframes music-hint-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .3; }
+}
+
+#music-toggle.hint { animation: music-hint-pulse 1.1s ease-in-out 3; }
+
 .carousel-serial {
   grid-column: 3;
   text-align: right;
