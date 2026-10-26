@@ -10,6 +10,45 @@
   const toggle = document.getElementById('music-toggle');
   if (!audio || !toggle) return;
 
+  // Loop manually (instead of the native loop attribute) so the restart can
+  // fade out/in rather than cutting straight from the track's natural end
+  // into its start, which was an audible jump.
+  const FADE_MS = 2000;
+  let looping = false;
+
+  function rampVolume(from, to, ms, done) {
+    const steps = 20;
+    const stepMs = ms / steps;
+    let i = 0;
+    audio.volume = from;
+    const timer = setInterval(function () {
+      i++;
+      audio.volume = from + (to - from) * (i / steps);
+      if (i >= steps) {
+        clearInterval(timer);
+        audio.volume = to;
+        if (done) done();
+      }
+    }, stepMs);
+  }
+
+  audio.addEventListener('timeupdate', function () {
+    if (looping || audio.paused || isNaN(audio.duration)) return;
+    const remaining = audio.duration - audio.currentTime;
+    if (remaining <= FADE_MS / 1000) {
+      looping = true;
+      rampVolume(audio.volume, 0, Math.max(remaining * 1000, 0), function () {
+        audio.currentTime = 0;
+        // the track can reach its natural end (and auto-pause) a moment
+        // before this fade-out finishes, racing the JS timer against real
+        // playback time -- play() again explicitly so it always resumes,
+        // even if that happened. Harmless no-op if it's still playing.
+        audio.play().catch(function () {});
+        rampVolume(0, 1, FADE_MS, function () { looping = false; });
+      });
+    }
+  });
+
   function setState(on) {
     toggle.textContent = on ? 'Music on' : 'Music off';
     toggle.classList.toggle('is-on', on);
