@@ -199,7 +199,14 @@ a:hover { color: #ffffff; }
 
 .intro {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  /* full viewport width, not the frame's -- the frame is now sized to the
+     photo (see updateImgMaxHeight/serial fix), which can be narrower than
+     "Daniele Gobbin photographer" needs, wrapping it to two lines */
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
