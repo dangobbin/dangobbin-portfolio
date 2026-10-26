@@ -93,13 +93,32 @@
     fadeEls.forEach(function (el) { el.style.opacity = v; });
   }
 
+  // Shuffle-bag random order (like a music player's shuffle) instead of an
+  // independent random pick each time. Independent picks only avoided
+  // repeating the photo just shown, so with 280+ photos it was still common
+  // to see the same one again after just a handful of slides -- random
+  // chance has high variance even when the average gap is large. A shuffled
+  // queue guarantees every photo is shown once before any repeat.
+  let queue = [];
+
+  function refillQueue(excludeFirst) {
+    const order = slides.map(function (_, i) { return i; });
+    for (let i = order.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = order[i]; order[i] = order[j]; order[j] = tmp;
+    }
+    // don't let the new cycle start with the photo that just ended the last one
+    if (order.length > 1 && order[0] === excludeFirst) {
+      const swapAt = 1 + Math.floor(Math.random() * (order.length - 1));
+      const tmp = order[0]; order[0] = order[swapAt]; order[swapAt] = tmp;
+    }
+    queue = order;
+  }
+
   function pickRandom(prevIndex) {
     if (slides.length <= 1) return 0;
-    let next;
-    do {
-      next = Math.floor(Math.random() * slides.length);
-    } while (next === prevIndex);
-    return next;
+    if (!queue.length) refillQueue(prevIndex);
+    return queue.shift();
   }
 
   // resolves once the browser has the image bytes decoded and cached, so
