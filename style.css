@@ -353,9 +353,29 @@ a:hover { color: #ffffff; }
 .contact-email:hover { color: var(--ink); }
 
 .site-footer {
+  position: relative;
   padding: 16px clamp(20px, 4vw, 64px);
   text-align: center;
 }
+
+.music-hint-banner {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 8px;
+  white-space: nowrap;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: clamp(18px, 4vw, 28px);
+  color: var(--accent);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, .6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s ease;
+}
+
+.music-hint-banner.is-visible { opacity: 1; }
 
 .site-footer .carousel-controls { justify-content: center; }
 

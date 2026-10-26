@@ -22,8 +22,18 @@
     try { localStorage.setItem('dangobbin-music', on ? '1' : '0'); } catch (e) {}
   }
 
+  let hintBanner = null;
+  function dismissHintBanner() {
+    if (!hintBanner) return;
+    hintBanner.classList.remove('is-visible');
+    const el = hintBanner;
+    hintBanner = null;
+    setTimeout(function () { el.remove(); }, 600);
+  }
+
   toggle.addEventListener('click', function () {
     toggle.classList.remove('hint'); // interacting dismisses the nudge for good
+    dismissHintBanner();
     if (audio.paused) {
       audio.play().then(function () { setState(true); }).catch(function () { setState(false); });
     } else {
@@ -45,7 +55,22 @@
     try { hintShown = localStorage.getItem('dangobbin-music-hint-shown') === '1'; } catch (e) {}
     if (!hintShown) {
       try { localStorage.setItem('dangobbin-music-hint-shown', '1'); } catch (e) {}
-      setTimeout(function () { toggle.classList.add('hint'); }, 1500);
+      setTimeout(function () {
+        toggle.classList.add('hint');
+        // a bigger, harder-to-miss banner above the button, on top of the
+        // subtle pulse -- absolutely positioned against .site-footer so it
+        // never adds real height (no layout shift, no re-measuring needed
+        // for the carousel's own image-height calculation on the home page)
+        const footer = document.querySelector('.site-footer');
+        if (footer) {
+          hintBanner = document.createElement('div');
+          hintBanner.className = 'music-hint-banner';
+          hintBanner.textContent = 'Try the music ♪';
+          footer.appendChild(hintBanner);
+          requestAnimationFrame(function () { hintBanner && hintBanner.classList.add('is-visible'); });
+          setTimeout(dismissHintBanner, 4000);
+        }
+      }, 1500);
     }
   }
 })();
